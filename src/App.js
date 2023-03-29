@@ -1,6 +1,11 @@
+import Header from "./components/Header";
+import Changer from "./components/Changer";
+
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Header />
+      <Changer />
     </div>
   );
 }

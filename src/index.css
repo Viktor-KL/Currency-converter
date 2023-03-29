@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat" , cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,98 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorWrap {
+  background: #45344D;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+/* header */
+
+.header {
+  margin-bottom: 40px;
+}
+.header__title {
+  color: #fff;
+  margin-bottom: 24px;
+}
+.header__priceWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.header__price {
+  background: #FAED4F;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Changer */
+
+.changer__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.change__select {
+  background: none;
+  border: none;
+  color: #FAED4F;
+  outline: none;
+}
+.change__inputWrap {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.change__inputBlock {
+  border: 1px solid #FAED4F;
+  padding: 21px 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.change__input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 90%;
+  font-size: 16px;
+  color: #fff;
+}
+.change__btn {
+  background: #FAED4F;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #FAED4F;
+  transition: .3s ease;
+}
+.change__btn:hover {
+  cursor: pointer;
+  background: none;
+  border: 1px solid #FAED4F;
+  color: #fff;
 }
